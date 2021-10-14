@@ -1,0 +1,38 @@
+.cardsOptions{
+  margin-bottom: 2em;
+}
+
+header nav{
+  background-color: #9CB6D9;
+}
+
+section{
+  padding-bottom: 2em;
+  background-color: #AED3F2;
+}
+
+h2{
+  padding: 1em 0 1em 0em;
+}
+
+footer{
+  background-color: #9CB6D9;
+  padding: 1em 0 1em 0em;
+}
+
+.nav-item a{
+  color: #212529;
+}
+
+ul{
+  border-bottom: 1px solid #9CB6D9!important;
+  padding-bottom: 2rem!important;
+}
+
+.cardsOptions img{
+  transition: all .3s ease-in-out; 
+}
+
+.cardsOptions img:hover{
+  transform: scale(1.1); 
+}

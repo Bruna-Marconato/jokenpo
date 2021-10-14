@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Jokenpô</title>
+  </head>
+  <body onload="init()">
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-md">
+          <a class="navbar-brand" href="#">Jokenpô</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slide1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <p>Olá! Você conhece o  Jokenpô? É um jogo bem antigo que tem sua origem na China mas foi no Japão que recebeu  esse nome “Jokenpô” e se popularizou para o mundo todo. Aqui em nosso país é conhecida como Pedra, Papel ou Tesoura.</p> 
+          <ul>
+            <li>Pedra ganha da tesoura (amassando-a ou quebrando-a).</li>
+            <li>Tesoura ganha do papel (cortando-o).</li>
+            <li>Papel ganha da pedra (embrulhando-a).</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <h2><b>Vamos jogar?</b></h2>
+          <p>Clique em uma das imagens</p>
+          <div class="row cardsOptions">
+            <div class="col-md-4 col-xs-12">
+              <img onclick="jogar('pedra')" width="100%"   height="auto" src="./img/pedra.jpg" alt="">
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <img onclick="jogar('papel')" width="100%"   height="auto" src="./img/papel.jpg" alt="">
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <img onclick="jogar('tesoura')" width="100%" height="auto" src="./img/tesoura.jpg" alt="">
+            </div>
+          </div>
+          <div class="row list" >
+            <div class="col-6 col-md-4" style="display: none;">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <ul class="nav justify-content-center pb-3 mb-3">
+        <li class="nav-item"><a href="https://github.com/Bruna-Marconato" target="_blank" class="nav-link px-2">GITHUB</a></li>
+        <li class="nav-item"><a href="https://www.linkedin.com/in/brunasmmarconato/" class="nav-link px-2">LINKEDIN</a></li>
+      </ul>
+      <p class="text-center">Bruna Stefane Martins Marconato</p>
+    </footer>
+
+<!-- Passo a passo -->
+<!-- Enviar um valor para o front através do salvar() ok -->
+<!-- Criar array com 3 tipos de jogadas na api ok -->
+<!-- Pesquisar sobre número randômico no JavaScript ok -->
+<!-- Criar um número randômico de 0 a 2 ok -->
+<!-- Criar uma const jogoPc que o conteúdo dessa da posição do número randômico 0 = "pedra" etc... ok -->
+<!-- Criar lógica (caso jogoPc for igual ao jogoUsuario então será empate) (caso jogoPc = "pedra" e jogoUsuario = "papel" então const placar = "Você 1 x 0 PC") ... regra do jogo OK-->
+<!-- Criar no init (front) para mostrar na tela as informações da API (feedback, jogoUsuario e jogoPC) ok -->
+<!-- Pesquisar como limpar um array ok -->
+<!-- Verificação da listagem, para que não apareça todas as jogadas ok-->
+<!-- Melhorar layout/front ok-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="init.js"></script>
+</body>
+</html>
